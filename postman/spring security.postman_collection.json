@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "8616bbc9-086c-40d2-ac25-5af1a735f7bf",
+		"name": "spring security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET http://localhost:8080/api/v1/beer/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjplNzY0NjBjYi03Y2NjLTRhYmQtYjA1YS1hMDk3YmU4OGFmMWY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET http://localhost:8080/api/v1/beer/ (2)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "e76460cb-7ccc-4abd-b05a-a097be88af1f",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjplNzY0NjBjYi03Y2NjLTRhYmQtYjA1YS1hMDk3YmU4OGFmMWY=",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beer",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
